@@ -22,16 +22,16 @@
     max-width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
-    background-color: $danger-low;
+    background-color: dark-light-diff($quaternary, $secondary, 70%, -70%);
     padding: 15px;
   }
 
   div.channel-details {
     margin: 20px 10px;
-    border: 1px solid $primary-low;
+    border: 1px solid dark-light-diff($primary, $secondary, 90%, -75%);
 
     div.channel-header {
-      background: $primary-low;
+      background: dark-light-diff($primary, $secondary, 90%, -75%);
       padding: 10px;
       overflow:auto;
 
@@ -70,7 +70,7 @@
     }
 
     tr.instructions label {
-      color: $primary-medium;
+      color: dark-light-choose(scale-color($primary, $lightness: 50%), scale-color($secondary, $lightness: 50%));
     }
   }
 
